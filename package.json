@@ -18,8 +18,12 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.0.1",
+    "eslint": "^7.16.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
     "node-sass": "^5.0.0",
     "sass-loader": "^10.1.0",
     "url-loader": "^4.1.1",
@@ -29,7 +33,6 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "eslint": "^7.16.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "style-loader": "^2.0.0"

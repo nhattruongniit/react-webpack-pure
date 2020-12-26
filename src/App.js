@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios'
+import axios from 'axios';
 
 // assets
-import LogoIcon from './assets/images/logo.png'
+import LogoIcon from './assets/images/logo.png';
 
 // components
 import Button from './components/Button';
+
+const aaa = '';
 
 export default function App() {
   const [count, setCount] = useState(1);
@@ -14,12 +16,12 @@ export default function App() {
   useEffect(() => {
     async function fetchTodo() {
       const { data } = await axios.get('https://jsonplaceholder.typicode.com/todos/1');
-      setTodos(data)
+      setTodos(data);
     }
 
     fetchTodo();
-  }, [])
-  
+  }, []);
+
   return (
     <div>
       <h3>test import scss</h3>
@@ -28,10 +30,9 @@ export default function App() {
       <img src={LogoIcon} alt="Logo" width="50px" />
       <h3>Test axios fetch data todo</h3>
       {todos && <>{todos.title}</>}
-      <br/>
-      <br/>
+      <br />
+      <br />
       <Button text="Increment" />
     </div>
-  )
-};
-
+  );
+}
